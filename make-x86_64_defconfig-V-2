@@ -1,0 +1,360 @@
+nerd@xning-ecs-ubuntu1604:~/projects/kernel_build/linux-source-4.4.0$ make --debug=a --trace V=2 x86_64_defconfig
+GNU Make 4.1
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile 'Makefile'...
+Reading makefile 'scripts/Kbuild.include' (search path) (no ~ expansion)...
+Reading makefile 'arch/x86/Makefile' (search path) (no ~ expansion)...
+Updating makefiles....
+ Considering target file 'arch/x86/Makefile'.
+  Looking for an implicit rule for 'arch/x86/Makefile'.
+  No implicit rule found for 'arch/x86/Makefile'.
+  Finished prerequisites of target file 'arch/x86/Makefile'.
+ No need to remake target 'arch/x86/Makefile'.
+ Considering target file 'scripts/Kbuild.include'.
+  Finished prerequisites of target file 'scripts/Kbuild.include'.
+ No need to remake target 'scripts/Kbuild.include'.
+ Considering target file 'Makefile'.
+  Finished prerequisites of target file 'Makefile'.
+ No need to remake target 'Makefile'.
+Updating goal targets....
+Considering target file 'x86_64_defconfig'.
+ File 'x86_64_defconfig' does not exist.
+ Looking for an implicit rule for 'x86_64_defconfig'.
+ Trying pattern rule with stem 'x86_64_def'.
+ Trying rule prerequisite 'scripts_basic'.
+ Trying rule prerequisite 'outputmakefile'.
+ Trying rule prerequisite 'FORCE'.
+ Found an implicit rule for 'x86_64_defconfig'.
+  Considering target file 'scripts_basic'.
+   File 'scripts_basic' does not exist.
+   Finished prerequisites of target file 'scripts_basic'.
+  Must remake target 'scripts_basic'.
+Makefile:454: target 'scripts_basic' does not exist
+make -f ./scripts/Makefile.build obj=scripts/basic
+Putting child 0x2554770 (scripts_basic) PID 6154 on the chain.
+Live child 0x2554770 (scripts_basic) PID 6154 
+GNU Make 4.1
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile 'scripts/Makefile.build'...
+Reading makefile 'include/config/auto.conf' (search path) (don't care) (no ~ expansion)...
+Reading makefile 'scripts/Kbuild.include' (search path) (no ~ expansion)...
+Reading makefile 'scripts/basic/Makefile' (search path) (no ~ expansion)...
+Reading makefile 'scripts/Makefile.lib' (search path) (no ~ expansion)...
+Reading makefile 'scripts/Makefile.host' (search path) (no ~ expansion)...
+Updating makefiles....
+ Considering target file 'scripts/Makefile.host'.
+  Looking for an implicit rule for 'scripts/Makefile.host'.
+  No implicit rule found for 'scripts/Makefile.host'.
+  Finished prerequisites of target file 'scripts/Makefile.host'.
+ No need to remake target 'scripts/Makefile.host'.
+ Considering target file 'scripts/Makefile.lib'.
+  Looking for an implicit rule for 'scripts/Makefile.lib'.
+  No implicit rule found for 'scripts/Makefile.lib'.
+  Finished prerequisites of target file 'scripts/Makefile.lib'.
+ No need to remake target 'scripts/Makefile.lib'.
+ Considering target file 'scripts/basic/Makefile'.
+  Looking for an implicit rule for 'scripts/basic/Makefile'.
+  Trying pattern rule with stem 'Makefile'.
+  Trying implicit prerequisite 'scripts/basic/Makefile_shipped'.
+  Trying pattern rule with stem 'Makefile'.
+  Trying implicit prerequisite 'scripts/basic/Makefile_shipped'.
+  Looking for a rule with intermediate file 'scripts/basic/Makefile_shipped'.
+   Avoiding implicit rule recursion.
+  No implicit rule found for 'scripts/basic/Makefile'.
+  Finished prerequisites of target file 'scripts/basic/Makefile'.
+ No need to remake target 'scripts/basic/Makefile'.
+ Considering target file 'scripts/Kbuild.include'.
+  Looking for an implicit rule for 'scripts/Kbuild.include'.
+  No implicit rule found for 'scripts/Kbuild.include'.
+  Finished prerequisites of target file 'scripts/Kbuild.include'.
+ No need to remake target 'scripts/Kbuild.include'.
+ Considering target file 'include/config/auto.conf'.
+  File 'include/config/auto.conf' does not exist.
+  Looking for an implicit rule for 'include/config/auto.conf'.
+  No implicit rule found for 'include/config/auto.conf'.
+  Finished prerequisites of target file 'include/config/auto.conf'.
+ Must remake target 'include/config/auto.conf'.
+ Failed to remake target file 'include/config/auto.conf'.
+ Considering target file 'scripts/Makefile.build'.
+  Looking for an implicit rule for 'scripts/Makefile.build'.
+  No implicit rule found for 'scripts/Makefile.build'.
+  Finished prerequisites of target file 'scripts/Makefile.build'.
+ No need to remake target 'scripts/Makefile.build'.
+Updating goal targets....
+Considering target file '__build'.
+ File '__build' does not exist.
+  Considering target file 'scripts/basic/fixdep'.
+   File 'scripts/basic/fixdep' does not exist.
+    Considering target file 'scripts/basic/fixdep.c'.
+     Looking for an implicit rule for 'scripts/basic/fixdep.c'.
+     Trying pattern rule with stem 'fixdep.c'.
+     Trying implicit prerequisite 'scripts/basic/fixdep.c_shipped'.
+     Trying pattern rule with stem 'fixdep.c'.
+     Trying implicit prerequisite 'scripts/basic/fixdep.c_shipped'.
+     Looking for a rule with intermediate file 'scripts/basic/fixdep.c_shipped'.
+      Avoiding implicit rule recursion.
+     No implicit rule found for 'scripts/basic/fixdep.c'.
+     Finished prerequisites of target file 'scripts/basic/fixdep.c'.
+    No need to remake target 'scripts/basic/fixdep.c'.
+    Considering target file 'FORCE'.
+     File 'FORCE' does not exist.
+     Finished prerequisites of target file 'FORCE'.
+    Must remake target 'FORCE'.
+    Successfully remade target file 'FORCE'.
+   Finished prerequisites of target file 'scripts/basic/fixdep'.
+  Must remake target 'scripts/basic/fixdep'.
+scripts/Makefile.host:91: update target 'scripts/basic/fixdep' due to: scripts/basic/fixdep.c FORCE
+set -e;  echo '  HOSTCC  scripts/basic/fixdep - due to target missing'; gcc -Wp,-MD,scripts/basic/.fixdep.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89     -o scripts/basic/fixdep scripts/basic/fixdep.c  ; scripts/basic/fixdep scripts/basic/.fixdep.d scripts/basic/fixdep 'gcc -Wp,-MD,scripts/basic/.fixdep.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89     -o scripts/basic/fixdep scripts/basic/fixdep.c  ' > scripts/basic/.fixdep.tmp; rm -f scripts/basic/.fixdep.d; mv -f scripts/basic/.fixdep.tmp scripts/basic/.fixdep.cmd
+Putting child 0x16889b0 (scripts/basic/fixdep) PID 6155 on the chain.
+Live child 0x16889b0 (scripts/basic/fixdep) PID 6155 
+  HOSTCC  scripts/basic/fixdep - due to target missing
+Reaping winning child 0x16889b0 PID 6155 
+Removing child 0x16889b0 PID 6155 from chain.
+  Successfully remade target file 'scripts/basic/fixdep'.
+ Finished prerequisites of target file '__build'.
+Must remake target '__build'.
+scripts/Makefile.build:97: update target '__build' due to: scripts/basic/fixdep
+:
+Successfully remade target file '__build'.
+Reaping winning child 0x2554770 PID 6154 
+rm -f .tmp_quiet_recordmcount
+Live child 0x2554770 (scripts_basic) PID 6164 
+Reaping winning child 0x2554770 PID 6164 
+Removing child 0x2554770 PID 6164 from chain.
+  Successfully remade target file 'scripts_basic'.
+  Considering target file 'outputmakefile'.
+   File 'outputmakefile' does not exist.
+   Finished prerequisites of target file 'outputmakefile'.
+  Must remake target 'outputmakefile'.
+  Successfully remade target file 'outputmakefile'.
+  Considering target file 'FORCE'.
+   File 'FORCE' does not exist.
+   Finished prerequisites of target file 'FORCE'.
+  Must remake target 'FORCE'.
+  Successfully remade target file 'FORCE'.
+ Finished prerequisites of target file 'x86_64_defconfig'.
+Must remake target 'x86_64_defconfig'.
+Makefile:552: update target 'x86_64_defconfig' due to: scripts_basic outputmakefile FORCE
+make -f ./scripts/Makefile.build obj=scripts/kconfig x86_64_defconfig
+Putting child 0x2554770 (x86_64_defconfig) PID 6167 on the chain.
+Live child 0x2554770 (x86_64_defconfig) PID 6167 
+GNU Make 4.1
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Reading makefiles...
+Reading makefile 'scripts/Makefile.build'...
+Reading makefile 'include/config/auto.conf' (search path) (don't care) (no ~ expansion)...
+Reading makefile 'scripts/Kbuild.include' (search path) (no ~ expansion)...
+Reading makefile 'scripts/kconfig/Makefile' (search path) (no ~ expansion)...
+Reading makefile 'scripts/Makefile.lib' (search path) (no ~ expansion)...
+Reading makefile 'scripts/Makefile.host' (search path) (no ~ expansion)...
+Updating makefiles....
+ Considering target file 'scripts/Makefile.host'.
+  Looking for an implicit rule for 'scripts/Makefile.host'.
+  No implicit rule found for 'scripts/Makefile.host'.
+  Finished prerequisites of target file 'scripts/Makefile.host'.
+ No need to remake target 'scripts/Makefile.host'.
+ Considering target file 'scripts/Makefile.lib'.
+  Looking for an implicit rule for 'scripts/Makefile.lib'.
+  No implicit rule found for 'scripts/Makefile.lib'.
+  Finished prerequisites of target file 'scripts/Makefile.lib'.
+ No need to remake target 'scripts/Makefile.lib'.
+ Considering target file 'scripts/kconfig/Makefile'.
+  Looking for an implicit rule for 'scripts/kconfig/Makefile'.
+  Trying pattern rule with stem 'Makefile'.
+  Trying implicit prerequisite 'scripts/kconfig/Makefile_shipped'.
+  Trying pattern rule with stem 'Makefile'.
+  Trying implicit prerequisite 'scripts/kconfig/Makefile_shipped'.
+  Looking for a rule with intermediate file 'scripts/kconfig/Makefile_shipped'.
+   Avoiding implicit rule recursion.
+  No implicit rule found for 'scripts/kconfig/Makefile'.
+  Finished prerequisites of target file 'scripts/kconfig/Makefile'.
+ No need to remake target 'scripts/kconfig/Makefile'.
+ Considering target file 'scripts/Kbuild.include'.
+  Looking for an implicit rule for 'scripts/Kbuild.include'.
+  No implicit rule found for 'scripts/Kbuild.include'.
+  Finished prerequisites of target file 'scripts/Kbuild.include'.
+ No need to remake target 'scripts/Kbuild.include'.
+ Considering target file 'include/config/auto.conf'.
+  File 'include/config/auto.conf' does not exist.
+  Looking for an implicit rule for 'include/config/auto.conf'.
+  No implicit rule found for 'include/config/auto.conf'.
+  Finished prerequisites of target file 'include/config/auto.conf'.
+ Must remake target 'include/config/auto.conf'.
+ Failed to remake target file 'include/config/auto.conf'.
+ Considering target file 'scripts/Makefile.build'.
+  Looking for an implicit rule for 'scripts/Makefile.build'.
+  No implicit rule found for 'scripts/Makefile.build'.
+  Finished prerequisites of target file 'scripts/Makefile.build'.
+ No need to remake target 'scripts/Makefile.build'.
+Updating goal targets....
+Considering target file 'x86_64_defconfig'.
+ File 'x86_64_defconfig' does not exist.
+ Looking for an implicit rule for 'x86_64_defconfig'.
+ Trying pattern rule with stem 'x86_64'.
+ Trying rule prerequisite 'scripts/kconfig/conf'.
+ Found an implicit rule for 'x86_64_defconfig'.
+  Considering target file 'scripts/kconfig/conf'.
+   File 'scripts/kconfig/conf' does not exist.
+    Considering target file 'FORCE'.
+     File 'FORCE' does not exist.
+     Finished prerequisites of target file 'FORCE'.
+    Must remake target 'FORCE'.
+    Successfully remade target file 'FORCE'.
+    Considering target file 'scripts/kconfig/conf.o'.
+     File 'scripts/kconfig/conf.o' does not exist.
+      Considering target file 'scripts/kconfig/conf.c'.
+       Looking for an implicit rule for 'scripts/kconfig/conf.c'.
+       Trying pattern rule with stem 'conf.c'.
+       Trying implicit prerequisite 'scripts/kconfig/conf.c_shipped'.
+       Trying pattern rule with stem 'conf.c'.
+       Trying implicit prerequisite 'scripts/kconfig/conf.c_shipped'.
+       Looking for a rule with intermediate file 'scripts/kconfig/conf.c_shipped'.
+        Avoiding implicit rule recursion.
+       No implicit rule found for 'scripts/kconfig/conf.c'.
+       Finished prerequisites of target file 'scripts/kconfig/conf.c'.
+      No need to remake target 'scripts/kconfig/conf.c'.
+      Pruning file 'FORCE'.
+     Finished prerequisites of target file 'scripts/kconfig/conf.o'.
+    Must remake target 'scripts/kconfig/conf.o'.
+scripts/Makefile.host:108: update target 'scripts/kconfig/conf.o' due to: scripts/kconfig/conf.c FORCE
+set -e;  echo '  HOSTCC  scripts/kconfig/conf.o - due to target missing'; gcc -Wp,-MD,scripts/kconfig/.conf.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89   -D_GNU_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE   -c -o scripts/kconfig/conf.o scripts/kconfig/conf.c; scripts/basic/fixdep scripts/kconfig/.conf.o.d scripts/kconfig/conf.o 'gcc -Wp,-MD,scripts/kconfig/.conf.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89   -D_GNU_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE   -c -o scripts/kconfig/conf.o scripts/kconfig/conf.c' > scripts/kconfig/.conf.o.tmp; rm -f scripts/kconfig/.conf.o.d; mv -f scripts/kconfig/.conf.o.tmp scripts/kconfig/.conf.o.cmd
+Putting child 0x2189b30 (scripts/kconfig/conf.o) PID 6208 on the chain.
+Live child 0x2189b30 (scripts/kconfig/conf.o) PID 6208 
+  HOSTCC  scripts/kconfig/conf.o - due to target missing
+Reaping winning child 0x2189b30 PID 6208 
+Removing child 0x2189b30 PID 6208 from chain.
+    Successfully remade target file 'scripts/kconfig/conf.o'.
+    Considering target file 'scripts/kconfig/zconf.tab.o'.
+     File 'scripts/kconfig/zconf.tab.o' does not exist.
+      Considering target file 'scripts/kconfig/zconf.tab.c'.
+       File 'scripts/kconfig/zconf.tab.c' does not exist.
+       Looking for an implicit rule for 'scripts/kconfig/zconf.tab.c'.
+       Trying pattern rule with stem 'zconf.tab.c'.
+       Trying implicit prerequisite 'scripts/kconfig/zconf.tab.c_shipped'.
+       Found an implicit rule for 'scripts/kconfig/zconf.tab.c'.
+        Considering target file 'scripts/kconfig/zconf.tab.c_shipped'.
+         Looking for an implicit rule for 'scripts/kconfig/zconf.tab.c_shipped'.
+         Trying pattern rule with stem 'zconf.tab.c_shipped'.
+         Trying implicit prerequisite 'scripts/kconfig/zconf.tab.c_shipped_shipped'.
+         Trying pattern rule with stem 'zconf.tab.c_shipped'.
+         Trying implicit prerequisite 'scripts/kconfig/zconf.tab.c_shipped_shipped'.
+         Looking for a rule with intermediate file 'scripts/kconfig/zconf.tab.c_shipped_shipped'.
+          Avoiding implicit rule recursion.
+         No implicit rule found for 'scripts/kconfig/zconf.tab.c_shipped'.
+         Finished prerequisites of target file 'scripts/kconfig/zconf.tab.c_shipped'.
+        No need to remake target 'scripts/kconfig/zconf.tab.c_shipped'.
+       Finished prerequisites of target file 'scripts/kconfig/zconf.tab.c'.
+      Must remake target 'scripts/kconfig/zconf.tab.c'.
+scripts/Makefile.lib:230: update target 'scripts/kconfig/zconf.tab.c' due to: scripts/kconfig/zconf.tab.c_shipped
+echo '  SHIPPED scripts/kconfig/zconf.tab.c - due to target missing'; cat scripts/kconfig/zconf.tab.c_shipped > scripts/kconfig/zconf.tab.c
+Putting child 0x2190330 (scripts/kconfig/zconf.tab.c) PID 6215 on the chain.
+Live child 0x2190330 (scripts/kconfig/zconf.tab.c) PID 6215 
+  SHIPPED scripts/kconfig/zconf.tab.c - due to target missing
+Reaping winning child 0x2190330 PID 6215 
+Removing child 0x2190330 PID 6215 from chain.
+      Successfully remade target file 'scripts/kconfig/zconf.tab.c'.
+      Pruning file 'FORCE'.
+      Considering target file 'scripts/kconfig/zconf.lex.c'.
+       File 'scripts/kconfig/zconf.lex.c' does not exist.
+       Looking for an implicit rule for 'scripts/kconfig/zconf.lex.c'.
+       Trying pattern rule with stem 'zconf.lex.c'.
+       Trying implicit prerequisite 'scripts/kconfig/zconf.lex.c_shipped'.
+       Found an implicit rule for 'scripts/kconfig/zconf.lex.c'.
+        Considering target file 'scripts/kconfig/zconf.lex.c_shipped'.
+         Looking for an implicit rule for 'scripts/kconfig/zconf.lex.c_shipped'.
+         Trying pattern rule with stem 'zconf.lex.c_shipped'.
+         Trying implicit prerequisite 'scripts/kconfig/zconf.lex.c_shipped_shipped'.
+         Trying pattern rule with stem 'zconf.lex.c_shipped'.
+         Trying implicit prerequisite 'scripts/kconfig/zconf.lex.c_shipped_shipped'.
+         Looking for a rule with intermediate file 'scripts/kconfig/zconf.lex.c_shipped_shipped'.
+          Avoiding implicit rule recursion.
+         No implicit rule found for 'scripts/kconfig/zconf.lex.c_shipped'.
+         Finished prerequisites of target file 'scripts/kconfig/zconf.lex.c_shipped'.
+        No need to remake target 'scripts/kconfig/zconf.lex.c_shipped'.
+       Finished prerequisites of target file 'scripts/kconfig/zconf.lex.c'.
+      Must remake target 'scripts/kconfig/zconf.lex.c'.
+scripts/Makefile.lib:230: update target 'scripts/kconfig/zconf.lex.c' due to: scripts/kconfig/zconf.lex.c_shipped
+echo '  SHIPPED scripts/kconfig/zconf.lex.c - due to target missing'; cat scripts/kconfig/zconf.lex.c_shipped > scripts/kconfig/zconf.lex.c
+Putting child 0x218ad20 (scripts/kconfig/zconf.lex.c) PID 6217 on the chain.
+Live child 0x218ad20 (scripts/kconfig/zconf.lex.c) PID 6217 
+  SHIPPED scripts/kconfig/zconf.lex.c - due to target missing
+Reaping winning child 0x218ad20 PID 6217 
+Removing child 0x218ad20 PID 6217 from chain.
+      Successfully remade target file 'scripts/kconfig/zconf.lex.c'.
+      Considering target file 'scripts/kconfig/zconf.hash.c'.
+       File 'scripts/kconfig/zconf.hash.c' does not exist.
+       Looking for an implicit rule for 'scripts/kconfig/zconf.hash.c'.
+       Trying pattern rule with stem 'zconf.hash.c'.
+       Trying implicit prerequisite 'scripts/kconfig/zconf.hash.c_shipped'.
+       Found an implicit rule for 'scripts/kconfig/zconf.hash.c'.
+        Considering target file 'scripts/kconfig/zconf.hash.c_shipped'.
+         Looking for an implicit rule for 'scripts/kconfig/zconf.hash.c_shipped'.
+         Trying pattern rule with stem 'zconf.hash.c_shipped'.
+         Trying implicit prerequisite 'scripts/kconfig/zconf.hash.c_shipped_shipped'.
+         Trying pattern rule with stem 'zconf.hash.c_shipped'.
+         Trying implicit prerequisite 'scripts/kconfig/zconf.hash.c_shipped_shipped'.
+         Looking for a rule with intermediate file 'scripts/kconfig/zconf.hash.c_shipped_shipped'.
+          Avoiding implicit rule recursion.
+         No implicit rule found for 'scripts/kconfig/zconf.hash.c_shipped'.
+         Finished prerequisites of target file 'scripts/kconfig/zconf.hash.c_shipped'.
+        No need to remake target 'scripts/kconfig/zconf.hash.c_shipped'.
+       Finished prerequisites of target file 'scripts/kconfig/zconf.hash.c'.
+      Must remake target 'scripts/kconfig/zconf.hash.c'.
+scripts/Makefile.lib:230: update target 'scripts/kconfig/zconf.hash.c' due to: scripts/kconfig/zconf.hash.c_shipped
+echo '  SHIPPED scripts/kconfig/zconf.hash.c - due to target missing'; cat scripts/kconfig/zconf.hash.c_shipped > scripts/kconfig/zconf.hash.c
+Putting child 0x2179dd0 (scripts/kconfig/zconf.hash.c) PID 6219 on the chain.
+Live child 0x2179dd0 (scripts/kconfig/zconf.hash.c) PID 6219 
+  SHIPPED scripts/kconfig/zconf.hash.c - due to target missing
+Reaping winning child 0x2179dd0 PID 6219 
+Removing child 0x2179dd0 PID 6219 from chain.
+      Successfully remade target file 'scripts/kconfig/zconf.hash.c'.
+     Finished prerequisites of target file 'scripts/kconfig/zconf.tab.o'.
+    Must remake target 'scripts/kconfig/zconf.tab.o'.
+scripts/Makefile.host:108: update target 'scripts/kconfig/zconf.tab.o' due to: scripts/kconfig/zconf.tab.c FORCE scripts/kconfig/zconf.lex.c scripts/kconfig/zconf.hash.c
+set -e;  echo '  HOSTCC  scripts/kconfig/zconf.tab.o - due to target missing'; gcc -Wp,-MD,scripts/kconfig/.zconf.tab.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89   -D_GNU_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE  -Iscripts/kconfig -c -o scripts/kconfig/zconf.tab.o scripts/kconfig/zconf.tab.c; scripts/basic/fixdep scripts/kconfig/.zconf.tab.o.d scripts/kconfig/zconf.tab.o 'gcc -Wp,-MD,scripts/kconfig/.zconf.tab.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89   -D_GNU_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE  -Iscripts/kconfig -c -o scripts/kconfig/zconf.tab.o scripts/kconfig/zconf.tab.c' > scripts/kconfig/.zconf.tab.o.tmp; rm -f scripts/kconfig/.zconf.tab.o.d; mv -f scripts/kconfig/.zconf.tab.o.tmp scripts/kconfig/.zconf.tab.o.cmd
+Putting child 0x218b1b0 (scripts/kconfig/zconf.tab.o) PID 6261 on the chain.
+Live child 0x218b1b0 (scripts/kconfig/zconf.tab.o) PID 6261 
+  HOSTCC  scripts/kconfig/zconf.tab.o - due to target missing
+Reaping winning child 0x218b1b0 PID 6261 
+Removing child 0x218b1b0 PID 6261 from chain.
+    Successfully remade target file 'scripts/kconfig/zconf.tab.o'.
+   Finished prerequisites of target file 'scripts/kconfig/conf'.
+  Must remake target 'scripts/kconfig/conf'.
+scripts/Makefile.host:100: update target 'scripts/kconfig/conf' due to: FORCE scripts/kconfig/conf.o scripts/kconfig/zconf.tab.o
+set -e;  echo '  HOSTLD  scripts/kconfig/conf - due to target missing'; gcc  -o scripts/kconfig/conf scripts/kconfig/conf.o scripts/kconfig/zconf.tab.o  ; printf '%s\n' 'cmd_scripts/kconfig/conf := gcc  -o scripts/kconfig/conf scripts/kconfig/conf.o scripts/kconfig/zconf.tab.o  ' > scripts/kconfig/.conf.cmd
+Putting child 0x2190200 (scripts/kconfig/conf) PID 6268 on the chain.
+Live child 0x2190200 (scripts/kconfig/conf) PID 6268 
+  HOSTLD  scripts/kconfig/conf - due to target missing
+Reaping winning child 0x2190200 PID 6268 
+Removing child 0x2190200 PID 6268 from chain.
+  Successfully remade target file 'scripts/kconfig/conf'.
+ Finished prerequisites of target file 'x86_64_defconfig'.
+Must remake target 'x86_64_defconfig'.
+scripts/kconfig/Makefile:110: update target 'x86_64_defconfig' due to: scripts/kconfig/conf
+scripts/kconfig/conf  --defconfig=arch/x86/configs/x86_64_defconfig Kconfig
+Putting child 0x218c5d0 (x86_64_defconfig) PID 6272 on the chain.
+Live child 0x218c5d0 (x86_64_defconfig) PID 6272 
+#
+# configuration written to .config
+#
+Reaping winning child 0x218c5d0 PID 6272 
+Removing child 0x218c5d0 PID 6272 from chain.
+Successfully remade target file 'x86_64_defconfig'.
+Reaping winning child 0x2554770 PID 6167 
+Removing child 0x2554770 PID 6167 from chain.
+Successfully remade target file 'x86_64_defconfig'.
+nerd@xning-ecs-ubuntu1604:~/projects/kernel_build/linux-source-4.4.0$ 
